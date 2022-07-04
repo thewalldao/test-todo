@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Selenium 2 Exam Test">
+    <test name="TestChrome" parallel="methods" thread-count="1">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="remote" value="false"/>
+        <classes>
+            <class name="testcase.TestTodo">
+                <methods>
+                    <include name="test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
